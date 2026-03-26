@@ -78,7 +78,7 @@ export default function WhyChooseUs() {
               24/7 customer support before, during &amp; after your trip
             </li>
           </ul>
-          <a href="#contact" className="btn-brown">
+          <a href="/contact" className="btn-brown">
             Learn More About Us
           </a>
         </div>

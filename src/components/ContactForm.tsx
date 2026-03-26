@@ -58,7 +58,7 @@ export default function ContactForm() {
             .
           </p>
           <a
-            href="#packages"
+            href="/packages"
             className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-md hover:bg-white hover:text-brand-brown transition font-semibold"
           >
             View Our Umrah Packages <FaArrowRight />

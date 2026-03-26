@@ -155,7 +155,7 @@ export default function BlogListing() {
                   </span>
                 </div>
                 <a
-                  href="/#contact"
+                  href="/contact"
                   className="inline-flex items-center gap-2 btn-brown text-sm"
                 >
                   Read Full Article <FaArrowRight size={12} />
@@ -216,7 +216,7 @@ export default function BlogListing() {
                         <FaCalendarAlt size={10} /> {blog.date}
                       </span>
                       <a
-                        href="/#contact"
+                        href="/contact"
                         className="text-brand-gold text-xs sm:text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all"
                       >
                         Read More <FaArrowRight size={10} />

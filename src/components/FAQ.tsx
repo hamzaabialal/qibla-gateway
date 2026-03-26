@@ -55,7 +55,7 @@ export default function FAQ() {
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
           Everything you need to know about booking your Umrah with Qibla
           Gateway. Can&apos;t find your answer?{" "}
-          <a href="#contact" className="text-brand-gold font-semibold hover:underline">
+          <a href="/contact" className="text-brand-gold font-semibold hover:underline">
             Contact us directly
           </a>
           .

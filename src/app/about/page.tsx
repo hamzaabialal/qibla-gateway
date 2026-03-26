@@ -1,33 +1,32 @@
 import type { Metadata } from "next";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import HowItWorks from "@/components/HowItWorks";
+import Reviews from "@/components/Reviews";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import BlogListing from "@/components/BlogListing";
 import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Umrah Resources & Travel Guides | Blog — Qibla Gateway",
+  title: "About Qibla Gateway | Trusted Umrah Travel Agency in USA",
   description:
-    "Explore Umrah travel guides, tips, packing lists, and spiritual preparation resources for pilgrims traveling from the USA. Expert advice from Qibla Gateway.",
-  alternates: {
-    canonical: "https://qiblagateway.com/resources",
-  },
+    "Learn about Qibla Gateway — a licensed USA-based Umrah travel agency in Sacramento, CA. Trusted by Muslim families across America for affordable & luxury Umrah packages.",
+  alternates: { canonical: "https://qiblagateway.com/about" },
   openGraph: {
-    title: "Umrah Resources & Travel Guides | Qibla Gateway",
-    description:
-      "Umrah travel guides, tips, and resources for American pilgrims. Expert advice from a trusted USA-based Umrah travel agency.",
-    url: "https://qiblagateway.com/resources",
+    title: "About Qibla Gateway | Trusted Umrah Travel Agency USA",
+    description: "Licensed Umrah travel agency based in Sacramento, CA serving pilgrims across America.",
+    url: "https://qiblagateway.com/about",
   },
 };
 
-export default function ResourcesPage() {
+export default function AboutPage() {
   return (
     <div className="overflow-x-hidden">
       <TopBar />
       <Header />
-
       <main>
-        {/* Hero Banner */}
+        {/* Hero */}
         <section
           className="relative py-12 sm:py-16 md:py-24 text-center text-white"
           style={{
@@ -39,30 +38,39 @@ export default function ResourcesPage() {
         >
           <div className="max-w-4xl mx-auto px-4">
             <p className="gold-text uppercase tracking-widest text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
-              Qibla Gateway Blog
+              About Qibla Gateway
             </p>
             <h1 className="font-playfair text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
-              Umrah Resources &amp; Travel Guides
+              Your Trusted Umrah Partner in the USA
             </h1>
             <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              Expert guides, travel tips, and spiritual preparation resources
-              for Muslim pilgrims traveling from the USA to Makkah &amp; Madinah.
+              Based in Sacramento, California — serving Muslim families from Houston,
+              Chicago, New York, Dallas, Los Angeles, and all across America.
             </p>
           </div>
         </section>
 
-        {/* Interactive Blog Listing with Category Filter */}
-        <BlogListing />
+        {/* Why Choose Us */}
+        <WhyChooseUs />
 
-        {/* CTA Section */}
+        {/* How It Works */}
+        <HowItWorks />
+
+        {/* Reviews */}
+        <Reviews />
+
+        {/* FAQ */}
+        <FAQ />
+
+        {/* CTA */}
         <section className="py-10 sm:py-16 bg-brand-dark text-white text-center">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
-              Ready to Book Your Umrah Package?
+              Ready to Start Your Umrah Journey?
             </h2>
             <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">
-              Browse our affordable and luxury Umrah packages from the USA, or
-              contact our team for a free personalized consultation.
+              Let Qibla Gateway handle everything — from visa to hotels to transport.
+              Focus on what matters: your spiritual experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a href="/packages" className="btn-gold rounded-md text-center text-sm sm:text-base">
@@ -78,7 +86,6 @@ export default function ResourcesPage() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );

@@ -99,7 +99,7 @@ export default function HalalDestinations() {
                 {dest.price}
               </p>
               <a
-                href="#contact"
+                href="/contact"
                 className={`inline-block px-8 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ease-in-out hover:scale-105 ${
                   dest.dark
                     ? "bg-white text-brand-dark hover:bg-gray-100 hover:shadow-lg"

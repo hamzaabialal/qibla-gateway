@@ -5,18 +5,18 @@ export default function TopBar() {
     <div className="bg-brand-dark text-white py-2 px-4 text-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <a href="#packages" className="hover:text-brand-gold transition gold-text font-medium">
+          <a href="/packages" className="hover:text-brand-gold transition gold-text font-medium">
             Umrah Package
           </a>
           <span className="text-gray-500">|</span>
-          <a href="#contact" className="hover:text-brand-gold transition gold-text font-medium">
+          <a href="/contact" className="hover:text-brand-gold transition gold-text font-medium">
             Customer Service
           </a>
         </div>
         <div className="hidden md:block">
           <span className="gold-text font-medium">
             Secure and Reliable Umrah Experience.{" "}
-            <a href="#contact" className="underline font-semibold hover:text-white transition">
+            <a href="/contact" className="underline font-semibold hover:text-white transition">
               Secure Your Seat Now
             </a>
           </span>

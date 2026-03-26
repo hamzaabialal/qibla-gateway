@@ -46,7 +46,7 @@ function PackageCard({
 }) {
   return (
     <a
-      href="#contact"
+      href="/contact"
       className="reveal-card package-card bg-white rounded-2xl overflow-hidden shadow-md block cursor-pointer group"
       style={{ transitionDelay: `${delay}ms` }}
     >

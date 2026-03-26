@@ -30,12 +30,12 @@ export default function Hero() {
         </p>
         <div className="hero-animate-cta flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#packages"
+            href="/packages"
             className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-md font-semibold transition-all duration-300 ease-in-out hover:bg-white hover:text-brand-brown hover:scale-105"
           >
             Explore Umrah Packages <FaArrowRight />
           </a>
-          <a href="#contact" className="btn-gold rounded-md text-center">
+          <a href="/contact" className="btn-gold rounded-md text-center">
             Get a Free Quote
           </a>
         </div>

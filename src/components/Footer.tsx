@@ -33,12 +33,12 @@ export default function Footer() {
           <ul className="space-y-2">
             {[
               { label: "Home", href: "/" },
-              { label: "Umrah Packages", href: "/#packages" },
-              { label: "About Us", href: "/#about" },
-              { label: "Halal Destinations", href: "/#destinations" },
+              { label: "Umrah Packages", href: "/packages" },
+              { label: "About Us", href: "/about" },
+              { label: "Destinations", href: "/destinations" },
               { label: "Resources", href: "/resources" },
               { label: "FAQ", href: "/#faq" },
-              { label: "Contact Us", href: "/#contact" },
+              { label: "Contact Us", href: "/contact" },
             ].map((link) => (
               <li key={link.label}>
                 <a
@@ -66,7 +66,7 @@ export default function Footer() {
             ].map((pkg) => (
               <li key={pkg}>
                 <a
-                  href="/#packages"
+                  href="/packages"
                   className="text-gray-400 hover:text-brand-gold transition text-sm"
                 >
                   {pkg}

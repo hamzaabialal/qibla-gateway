@@ -4,11 +4,11 @@ import { FaPhone, FaSearch, FaBars, FaTimes } from "react-icons/fa";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Packages", href: "/#packages" },
-  { label: "About Us", href: "/#about" },
-  { label: "Halal Destinations", href: "/#destinations" },
+  { label: "Packages", href: "/packages" },
+  { label: "About Us", href: "/about" },
+  { label: "Destinations", href: "/destinations" },
   { label: "Resources", href: "/resources" },
-  { label: "Contact Us", href: "/#contact" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Header() {
