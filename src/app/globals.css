@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts loaded via preload in layout.tsx — no render-blocking @import */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.gold-text {
+  color: #C4A24E;
+}
+
+.brown-bg {
+  background-color: #3D2B1F;
+}
+
+.dark-brown-bg {
+  background-color: #2C1810;
+}
+
+/* ─── Premium Button Styles ─── */
+.btn-gold {
+  background-color: #C4A24E;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-gold:hover {
+  background-color: #b3913e;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(196, 162, 78, 0.35);
+}
+
+.btn-brown {
+  background-color: #3D2B1F;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 28px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-brown:hover {
+  background-color: #2C1810;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(61, 43, 31, 0.35);
+}
+
+/* ─── Card Hover ─── */
+.package-card {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.destination-card {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Hero Entrance Animation ─── */
+@keyframes heroFadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.hero-animate-subtitle {
+  animation: heroFadeScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.hero-animate-title {
+  animation: heroFadeScale 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+.hero-animate-desc {
+  animation: heroFadeScale 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+}
+
+.hero-animate-cta {
+  animation: heroFadeScale 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both;
+}
+
+/* ─── Partners Marquee ─── */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 30s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ─── Popup ─── */
+@keyframes backdropIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.popup-backdrop {
+  animation: backdropIn 0.4s ease-out forwards;
+}
+
+.popup-modal {
+  animation: modalIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+/* ─── Scroll Reveal ─── */
+.reveal-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-card.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Hide scrollbar for horizontal scroll on mobile ─── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── Header Collapse on Scroll ─── */
+.header-collapsed {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3D2B1F;
+  border-radius: 4px;
+}
